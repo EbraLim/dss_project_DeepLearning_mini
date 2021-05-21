@@ -1,5 +1,5 @@
 [Deep Learning project, toy project]\
-OX classification with hand-written ox images
+OX classification with hand-written images
 ==
 ## 1. 소개
 ### 1) 주제
