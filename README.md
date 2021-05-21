@@ -46,7 +46,7 @@ OX classification with hand-written ox images
 * dilate와 erode를 반복하여 노이즈 제거 및 ox 이미지 강조    
   (dilate → erode → dilate 순으로 진행, dilate와 erode의 커널 크기는 각각 (45,45), (35,35)로 진행)
 * 이미지 내 O, X의 영역만 crop, resize (360 x 360) 후 검은 정사각형 (400 x 400)과 합침
-* 딥러닝 학습을 위한 scaling (0~255 사이의 값을 0~1 사이의 값으로 변환)
+* 딥러닝 학습을 위한 scaling (0 ~ 255 사이의 값을 0 ~ 1 사이의 값으로 변환)
 * O, X 데이터 통합 및 train/test 데이터셋 분리 (test size = 0.3)
 
 ### 6) 성능평가 (2차)
