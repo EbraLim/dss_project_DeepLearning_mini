@@ -27,7 +27,7 @@ OX classification with hand-written images
 <img width="753" alt="스크린샷 2021-05-22 오전 10 35 27" src="https://user-images.githubusercontent.com/78459305/119210823-6f287200-bae9-11eb-8642-927d28b66df4.png">
 
 * resize (원본 2160 x 2880 → 360 x 480 으로 축소)
-* 딥러닝 학습을 위한 scaling (0~255 사이의 값을 0~1 사이의 값으로 변환)
+* 딥러닝 학습을 위한 scaling (0 ~ 255 사이의 값을 0 ~ 1 사이의 값으로 변환)
 * O, X 데이터 통합 및 train/test 데이터셋 분리 (test size = 0.2)
 
 ### 3) 모델링
@@ -64,8 +64,10 @@ OX classification with hand-written images
 ----
 
 ## 4. 오분류 데이터 확인 및 원인 추정 (CNN 기준)
-* 오분류 데이터 5개가 O를 X로 잘못 인식한 경우였으며, 그 중 4개가 O가 한쪽 구석에, 그리고 점이 반대 방향 꼭짓점에 있는 경우였음
-  → 이미지의 꼭짓점에 데이터가 있으면 X, 없으면 O로 분류하는 것으로 추정됨
+* 오분류 데이터 5개가 O를 X로 잘못 인식한 경우였으며, 그 중 4개가 O가 한쪽 구석에, 그리고 점이 반대 방향 꼭짓점에 있는 경우였음  
+  → 이미지의 꼭짓점에 데이터가 있으면 X, 없으면 O로 분류하는 것으로 추정됨  
+<img width="575" alt="스크린샷 2021-05-22 오전 10 48 09" src="https://user-images.githubusercontent.com/78459305/119211113-35586b00-baeb-11eb-8fe7-af271da50a2b.png">  
+  
 ----
 
 ## 5. 추후 보완점
