@@ -24,7 +24,7 @@ OX classification with hand-written images
 * 이미지 이진화(binarization) (threshold=50)
 * resize (원본 2160 x 2880 → 360 x 480 으로 축소)
 * 딥러닝 학습을 위한 scaling (0~255 사이의 값을 0~1 사이의 값으로 변환)
-* O, X 데이터 통합 및 train/test 데이터셋 분리 (test size = 0.3)
+* O, X 데이터 통합 및 train/test 데이터셋 분리 (test size = 0.2)
 
 ### 3) 모델링
 * ANN과 CNN, 총 두가지 모델 사용
@@ -47,7 +47,7 @@ OX classification with hand-written images
   (dilate → erode → dilate 순으로 진행, dilate와 erode의 커널 크기는 각각 (45,45), (35,35)로 진행)
 * 이미지 내 O, X의 영역만 crop, resize (360 x 360) 후 검은 정사각형 (400 x 400)과 합침
 * 딥러닝 학습을 위한 scaling (0 ~ 255 사이의 값을 0 ~ 1 사이의 값으로 변환)
-* O, X 데이터 통합 및 train/test 데이터셋 분리 (test size = 0.3)
+* O, X 데이터 통합 및 train/test 데이터셋 분리 (test size = 0.2)
 
 ### 6) 성능평가 (2차)
 * 1차와 동일한 모델 사용
