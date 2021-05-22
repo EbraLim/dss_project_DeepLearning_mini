@@ -12,7 +12,8 @@ OX classification with hand-written images
 
 ## 2. 진행 프로세스
 <img width="233" alt="스크린샷 2021-05-21 오후 12 07 06" src="https://user-images.githubusercontent.com/78459305/119076168-11ceeb00-ba2d-11eb-9e8b-70f441f8cfca.png">
-* 총 2번의 iteration 수행      
+* 총 2번의 iteration 수행
+      
 ----
 
 ## 3. 프로세스별 상세설명
