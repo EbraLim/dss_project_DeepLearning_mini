@@ -35,6 +35,14 @@ OX classification with hand-written images
 * 데이터 복잡성을 높이기 위해 선 굵기가 다른 5개의 펜 사용, 필적 학습 방지를 위해 양손으로 번갈아가며 제작
 <img width="753" alt="스크린샷 2021-05-22 오전 10 34 30" src="https://user-images.githubusercontent.com/78459305/119210805-4c965900-bae9-11eb-9efa-9a1c24462005.png">
 
+* raw data에 대해 크게 3가지 문제점이 있었으며, 아래와 같이 해결하고자 하였음  
+  - 다양한 명도를 가진 컬러 이미지이며, 종이와 책상의 경게선이나 그림자 등 노이즈 존재  
+    → 이진화 (binarization)를 통해 처리  
+  - 펜 종류에 따라 매우 얇고 흐릿한 데이터 존재  
+    → dilate와 erode의 적절한 조합을 통해 선이 두꺼워지도록 변환  
+  - 이미지 내 O,X의 위치가 다양하게 분산되어 있음 (중앙, 구석)  
+    → O,X의 ROI (Region Of Interest: 관심영역)만을 crop한 후 검은색 mask를 적용하여 이미지 중앙으로 위치 통일  
+
 ### 2) 전처리 (1차)
 * 이미지 이진화(binarization) (threshold=50)  
 <img width="753" alt="스크린샷 2021-05-22 오전 10 35 27" src="https://user-images.githubusercontent.com/78459305/119210823-6f287200-bae9-11eb-8642-927d28b66df4.png">  
