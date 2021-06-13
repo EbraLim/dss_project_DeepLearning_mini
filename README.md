@@ -31,7 +31,7 @@ OX classification with hand-written images
 
 ## 3. 프로세스별 상세설명
 ### 1) 데이터 수집
-* A4 용지를 64등분한 크기로 O,X 각각 320개씩 제작 후 직접 촬영
+* A4 용지를 64등분한 크기로 O,X 각각 160개씩, 총 320개 제작 후 직접 촬영
 * 데이터 복잡성을 높이기 위해 선 굵기가 다른 5개의 펜 사용, 필적 학습 방지를 위해 양손으로 번갈아가며 제작
 <img width="753" alt="스크린샷 2021-05-22 오전 10 34 30" src="https://user-images.githubusercontent.com/78459305/119210805-4c965900-bae9-11eb-9efa-9a1c24462005.png">
 
